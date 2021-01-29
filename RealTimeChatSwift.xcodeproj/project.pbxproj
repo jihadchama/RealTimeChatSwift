@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -21,6 +21,7 @@
 		8BEB18F425C2F323003544DF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BEB18F325C2F323003544DF /* LoginViewController.swift */; };
 		8BEB18F725C2F341003544DF /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BEB18F625C2F341003544DF /* RegisterViewController.swift */; };
 		8BEB18FA25C2F6FE003544DF /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BEB18F925C2F6FE003544DF /* Extensions.swift */; };
+		8BF1DAB425C334880007B852 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8BF1DAB325C334880007B852 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		8BEB18F325C2F323003544DF /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		8BEB18F625C2F341003544DF /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		8BEB18F925C2F6FE003544DF /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		8BF1DAB325C334880007B852 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Desktop/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F2D708FA22BBB32BD93A6F20 /* Pods-RealTimeChatSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealTimeChatSwift.release.xcconfig"; path = "Target Support Files/Pods-RealTimeChatSwift/Pods-RealTimeChatSwift.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -94,6 +96,7 @@
 		8B3F8BFB25C2ED8200C85D10 /* RealTimeChatSwift */ = {
 			isa = PBXGroup;
 			children = (
+				8BF1DAB325C334880007B852 /* GoogleService-Info.plist */,
 				8B3F8C1725C2EE5700C85D10 /* resources */,
 				8B3F8C1625C2EE5000C85D10 /* viewModels */,
 				8B3F8C1525C2EE4900C85D10 /* models */,
@@ -179,6 +182,7 @@
 				8B3F8BF525C2ED8200C85D10 /* Sources */,
 				8B3F8BF625C2ED8200C85D10 /* Frameworks */,
 				8B3F8BF725C2ED8200C85D10 /* Resources */,
+				B07DC69ACAF3145339AF18B0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -227,6 +231,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8B3F8C0925C2ED8300C85D10 /* LaunchScreen.storyboard in Resources */,
+				8BF1DAB425C334880007B852 /* GoogleService-Info.plist in Resources */,
 				8B3F8C0625C2ED8300C85D10 /* Assets.xcassets in Resources */,
 				8B3F8C0425C2ED8200C85D10 /* Main.storyboard in Resources */,
 			);
@@ -255,6 +260,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B07DC69ACAF3145339AF18B0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RealTimeChatSwift/Pods-RealTimeChatSwift-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RealTimeChatSwift/Pods-RealTimeChatSwift-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RealTimeChatSwift/Pods-RealTimeChatSwift-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
