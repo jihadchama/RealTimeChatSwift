@@ -32,10 +32,25 @@
                     <view key="view" contentMode="scaleToFill" id="wHa-Pz-JFu">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="JDr-0F-mfm">
+                                <rect key="frame" x="0.0" y="140" width="414" height="673"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="RIl-VD-bae"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="JDr-0F-mfm" firstAttribute="top" secondItem="RIl-VD-bae" secondAttribute="top" id="XYb-mt-quD"/>
+                            <constraint firstItem="JDr-0F-mfm" firstAttribute="leading" secondItem="RIl-VD-bae" secondAttribute="leading" id="fOG-Xx-ztN"/>
+                            <constraint firstItem="RIl-VD-bae" firstAttribute="trailing" secondItem="JDr-0F-mfm" secondAttribute="trailing" id="rhN-nY-Pw6"/>
+                            <constraint firstItem="RIl-VD-bae" firstAttribute="bottom" secondItem="JDr-0F-mfm" secondAttribute="bottom" id="wvB-Zt-MF4"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Profile" id="EwP-W7-qe5"/>
+                    <connections>
+                        <outlet property="tableView" destination="JDr-0F-mfm" id="Fw8-Jp-kjn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Aas-7z-8J1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -65,8 +80,8 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="K82-0H-xXO" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Chats" id="vDY-fB-hcc"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="xxS-sO-2xL">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="xxS-sO-2xL">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -83,8 +98,8 @@
             <objects>
                 <navigationController id="KDj-BG-Twv" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Profile" id="Rl1-Et-jBU"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="hpz-2f-7gT">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="hpz-2f-7gT">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
